@@ -61,15 +61,15 @@ button {
 
 } */
 
-/*
+
 .main-container,
 .divider {
 	width: 90%;
-	remove the max-width here
-	max-width: 768px;
-
 }
-*/
+
+.main-container {
+	max-width: 800px;
+}
 
 .main-container,
 #inner-header {
@@ -127,7 +127,7 @@ form {
 	margin: 1em 0;
 	padding: 0.3em 0.3em;
 	width: 99%;
-	max-width: 250px;
+
 }
 
 .main-footer {
@@ -374,6 +374,8 @@ input[id="email"]:-moz-input-placeholder {
 
 button {
 	cursor: pointer;
+	width: 99%;
+	max-width: 300px;
 	padding: 10px;
 	margin: 10px auto;
 	background: #000;
@@ -539,17 +541,7 @@ Media Queries
 
 @media (min-width: 768px) {
 
-	/****************************
-Base Element Styles Media 768px
-*****************************/
 
-
-	#news-letter>label,
-	#text-editors>label,
-	input[type="checkbox"]:checked:before,
-	input[type="radio"]:checked:before {
-		text-align: left;
-	}
 
 
 	/****************************
@@ -614,42 +606,6 @@ Base Containers Media 768px
 	}
 
 
-
-
-	/* #contact-info .field label,
-	#contact-info .field input[type="text"],
-	#contact-info .field input[type="email"],
-	#contact-info .field input[type="tel"],
-	#contact-info .field input[id="postcode"],
-	#contact-info .field select {
-
-		display: inline-block;
-
-	} */
-
-
-	#contact-info .field label {
-		width: 30%;
-
-	}
-
-
-	#contact-info .field input[type="text"],
-	#contact-info .field input[type="email"],
-	#contact-info .field input[type="tel"],
-	#contact-info .field select,
-	#fav_textEditor {
-		width: 60%;
-
-	}
-
-
-	#contact-info .field input[id="postcode"] {
-		/*postcode input*/
-		width: 30%;
-	}
-
-
 	#fav_textEditor {
 		/*select for fav text editor*/
 		width: 60%;
@@ -665,7 +621,45 @@ Base Containers Media 768px
 	textarea,
 	.textarea-labels,
 	.textEditor-tired {
-		margin-left: 58px;
+		margin: 1.5em auto;
+		text-align: center;
+	}
+
+	#newsFormat-label {
+		text-align: center;
+	}
+
+	.center-label,
+	#newsFormat-label,
+	#textarea-labelOther {
+		font-size: 1.2em;
+	}
+
+	.field-textEd {
+		/*<p> containers for text-editors checkboxes*/
+		max-width: 310px;
+
+	}
+
+	.field-textEd .side_label {
+		font-size: 1.5em;
+	}
+
+	.contact-field {
+		height: 90px;
+	}
+
+	.contact-field input,
+	.contact-field #county {
+		width: 70%;
+	}
+
+	.contact-field label {
+		width: 28%;
+	}
+
+	.contact-field #postcode {
+		width: 25%;
 	}
 
 
@@ -675,20 +669,14 @@ Base Containers Media 768px
 **********************************/
 
 	#container_checkboxes-editors,
-	.field {
+	.contact-field {
 		display: -ms-flexbox;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	/* .field-textEd {
-		-ms-flex: 1 50%;
-		flex: 1 50%;
-		align-items: center;
 
-
-	} */
 
 
 
@@ -705,231 +693,25 @@ Base Containers Media 768px
 
 	}
 
+	footer p {
+		text-align: center;
+	}
+
 }
 
 
 
 
 
-/* @media (min-width: 1024px) { */
+@media (min-width: 1024px) {
 
 
-/****************************
- Element Styles Media 1024px
-*****************************/
-
-
-/* #main-header h1 {
-		font-size: 2.5em;
-		text-shadow: 3px 3px rgba(0, 0, 0, 0.7);
+	.field-textEd {
+		/*<p> containers for text-editors checkboxes*/
+		max-width: 210px;
 
 	}
 
 
-	#main-header h2 {
 
-		font-size: 1.7em;
-
-
-	}
-
-
-	#main-header p {
-		font-size: 1.5em;
-
-	}
- */
-
-/****************************
- Form Element Styles Media 1024px
-*****************************/
-
-/* legend,
-	#news-letter legend,
-	#text-editors legend {
-		font-size: 2em;
-		text-shadow: 1px 1px #ffa17f;
-		padding-right: 0;
-
-	} */
-
-
-
-
-/********PLACE HOLDER  ***********/
-
-
-/* input[id="name"]::-webkit-input-placeholder { */
-/*Chrome/Opera/Safari */
-/* font-style: italic;
-		text-align: center;
-
-	} */
-
-
-
-/* input[id="name"]::-moz-input-placeholder { */
-/* Firefox 19+ */
-/* font-style: italic;
-		text-align: center;
-
-	} */
-
-
-
-/* input[id="name"]:-ms-input-placeholder { */
-/* IE 10+ */
-/* font-style: italic;
-		text-align: center;
-
-	} */
-
-
-/* #contact-info .field:first-child label,
-	#contact-info .field:first-child input[type="text"],
-	#text-editors .textEditor-tried,
-	/*label*/
-/* #text-editors #textEditors,
-	textarea,
-	#fav_textEditor,
-	.flex-formItems>label {
-		display: block;
-		text-align: center;
-
-	} */
-
-/* #contact-info .field:first-child label,
-	#contact-info .field:first-child input[type="text"],
-	label[for="topics"] {
-		width: 100%;
-		text-align: center;
-		font-size: 1.8em;
-
-	} */
-
-
-/* #contact-info .field:first-child input[type="text"] {
-		width: 96%;
-		font-size: 1.3em;
-		margin: 0 auto 50px;
-		padding: 1em 0;
-
-	} */
-
-
-/* #contact-info .field label,
-	#fav_textEditor {
-		width: 40%;
-
-	} */
-
-
-/* #contact-info .field input[type="text"],
-	#contact-info .field input[type="email"],
-	#contact-info .field input[type="tel"],
-	#contact-info .field select,
-	#fav_textEditor {
-		width: 50%;
-
-	} */
-
-
-/* #contact-info .field input[id="postcode"] { */
-/*postcode input*/
-/* width: 25%;
-	} */
-
-/* #news-letter input[type="checkbox"] {
-		margin-left: 100px;
-	} */
-
-
-/* #news-letter input[type="radio"] {
-		margin-left: 150px;
-	} */
-
-/* .flex-formItems>label {
-		font-size: 1.09em;
-		padding-bottom: 1em;
-	} */
-
-
-
-/* label[for="topics"],
-	#text-editors .textEditor-tried {
-		font-size: 1.5em;
-		padding: 1em 0 0.5em 0;
-	} */
-
-/* textarea {
-		width: 80%;
-		margin: 8px auto 15px;
-	} */
-
-
-/* button,
-	button:hover {
-		width: 60%;
-
-	} */
-
-/* button,
-	button:hover,
-	#fav_textEditor {
-
-		font-size: 2em;
-		margin: 0 auto;
-	}
-
-	#fav_textEditor { */
-/*selector*/
-
-/* font-size: 1.8em;
-
-	} */
-
-/*******************************
-	FLEXBOX MEDIA 1024PX
-**********************************/
-
-
-/* .flex-container {
-		display: -ms-flexbox;
-		display: -moz-box;
-		display: flex;
-		flex-wrap: wrap;
-	} */
-
-/* .flex-formItems,
-	#contact-info .field,
-	#news-letter .field-news {
-		-ms-flex: 1 50%;
-		flex: 1 50%;
-		align-items: center;
-
-
-	} */
-
-
-/* #contact-info .field:first-child,
-	#news-letter .flex-formItems:last-child {
-		-ms-flex: 100%;
-		flex: 100%;
-		align-items: center;
-
-
-	} */
-
-
-/* .field-textEd {
-		-ms-flex: 1 33.3333%;
-		flex: 1 33.333%;
-
-	} */
-
-
-
-
-
-
-/* } */
+}
