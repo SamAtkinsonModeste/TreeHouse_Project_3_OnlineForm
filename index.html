@@ -1,307 +1,311 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Code Review Form</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Audiowide%7CRoboto+Condensed:400,700,700i" rel="stylesheet">
-<link rel="stylesheet" href="css/form.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Review Form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide%7CRoboto+Condensed:400,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-                        <!-- MAIN HEADER -->
+  <!-- MAIN HEADER -->
   <header id="main-header" class="box-inset-shadow">
-        
- 
-  <h1>THE CODE REVIEW</h1>
-  
-     
-        <h2>Signup for our newsletter</h2>
-   
-        <p>Get the lastest news on how your code is doing right in your inbox</p>
-             
-          </header>    
-                        <!-- MAIN HEADER END -->  
-            <hr class="divider">
-                          <!-- MAIN CONTAINER --> 
-             <div class="main-container">
-             
-             
-                              <!-- FORM --> 
-             <form action="index.html" method="post">
-              <!-- CONTACT INFO -->
-                  <fieldset id="contact-info">
-                     
-                     <legend>Contact Information</legend>
-								
-								<!--FLEX CONTAINER STARTS --> 
-						   <div class="flex-container">
 
-             
-								 <div class="field">
-									 <label for="name" class="contact-info">Full Name</label>
-										<input type="text"   id="name" placeholder="Required" name="user_name" required maxlenght="65">
-								</div>
-              
-              
-             
-					  <div class="field">
-					  <label for="email" class="contact-info">Email Address</label>
-					  <input type="email"  id="email" placeholder="Required" name="user_email" required>
-					  </div>
-              
-             
-              
-					   <div class="field">
-					   <label for="tel-no" class="contact-info">Phone Number</label>
-					  <input type="tel"    id="tel-no" placeholder="0207 888 9898"    name="user_tel-no" >
-					  </div>
-              
-             
-             
-					   <div class="field">
-					    <label for="street" class="contact-info">Street Address</label>
-					  <input type="text"   id="street"    placeholder="67 Gains Road" name="user_street">
-					  </div>
-              
-             
-             
-					   <div class="field">
-					    <label for="city" class="contact-info">City</label>
-					  <input type="text"   id="city" placeholder="Croydon"     name="user_city">
-					  </div>
 
-              
-              
-					  <div class="field">
-					  <label for="county" class="contact-info">County</label>
-					  <select id="county"    name="user_county">
-			<option selected hidden disabled>Choose your County</option>
-						 <option value="middlesex">Middlesex</option>
-						 <option value="kent">Kent</option>
-						 <option value="surrey">Surrey</option>
-						 <option value="essex">Essex</option>
-						 <option value="hertfordshire">Hertfordshire</option>
+    <h1>THE CODE REVIEW</h1>
 
-					  </select>   
-					  </div>
-              
-              
-              
-					  <div class="field">
-					  <label for="postcode" class="contact-info">Postcode</label>
-					  <input type="text"   id="postcode"  name="user_postcode">
-					  </div>
-					  
-			</div>
-         <!--FLEX CONTAINER END --> 
-    </fieldset>  
-        
-                             <!-- CONTACT INFO END -->
-                             
-                              <!-- NEWSLETTER INFO -->
-  
-  <fieldset id="news-letter">
-      
-    <legend>Newsletter</legend>
-    <!--FLEX CONTAINER STARTS --> 
-    <div class="flex-container">
-     
-    <!-- FLEX FORM ITEMS START --> 
-      <div class="flex-formItems">
-      
-		   <label>Select the newsletters you would like to recieve.</label>
-					<div class="field-news">
-					<input type="checkbox"  id="html" value="news_html" name="newsletter_pref">
-				  <label for="html" class="side_label">HTML News</label>
-					  </div>
-				  <div class="field-news"> 
-					<input type="checkbox"  id="css" value="news_css" name="newsletter_pref">
-					<label for="css" class="side_label">CSS News</label>
-					</div> 
 
-					<div class="field-news">
-					<input type="checkbox"  id="javaScript" value="news_javascript" name="newsletter_pref">
-					<label for="javaScript" class="side_label">Javascript News</label>
-					</div>
+    <h2>Signup for our newsletter</h2>
+
+    <p>Get the lastest news on how your code is doing right in your inbox</p>
+
+  </header>
+  <!-- MAIN HEADER END -->
+  <hr class="divider">
+  <!-- MAIN CONTAINER -->
+  <div class="main-container">
+
+
+    <!-- FORM -->
+    <form action="index.html" method="post">
+      <!-- FIELDSET CONTACT INFO -->
+      <fieldset id="contact-info">
+
+        <legend>Contact Information</legend>
+
+        <!--FLEX CONTAINER STARTS -->
+        <div class="input-container">
+
+
+          <div class="contact-field">
+            <label for="name" class="contact-info">Full Name</label>
+            <input type="text" id="name" placeholder="Required" name="user_name" required maxlenght="65">
           </div>
-         <!-- FLEX FORM ITEMS ENDS --> 
-         
-         <!-- FLEX FORM ITEMS START --> 
-   <div class="flex-formItems">
-         
-	 <label>Newsletter format</label>
-				<div class="field-news">
-					<input type="radio" id="html_format" value="html_format" name="news-format">
-				   <label for="html_format" class="side_label">HTML</label>
-				  </div>
 
-			   <div class="field-news">
-					<input type="radio"  id="plain-text_format" value="plain-text" name="news-format">
-					<label for="plain-text_format" class="side_label">Plain Text</label>
-                </div>
-			
-      </div>
-         <!-- FLEX FORM ITEMS ENDS --> 
-         
-    <!-- FLEX FORM ITEMS START --> 
-   <div class="flex-formItems">
-            
-        <label for="topics">Other topics you'd like to hear about</label>
-				 <div class="field-news">
-					<textarea id="topics" name="user_topics">
 
-					</textarea>
-	             </div>
-	             
-		  </div>
-		<!-- FLEX FORM ITEMS ENDS --> 		 
-		</div>
-         <!--FLEX CONTAINER END --> 
-  </fieldset>
-        
-                       <!-- NEWSLETTER INFO END -->
-                       
-                       
-                       <!-- TEXT EDITORS INFO -->
-        
-  <fieldset id="text-editors">
-      <legend>About Text Editors</legend>
-        
-        <label class="textEditor-tried">Which of these Text Editors have you tried?</label>
-     
-      <!-- CONTAINER FOR TEXT EDITORS -->
-       
-       <div id="container_checkboxes-editors"> 
-        <p class="field-textEd">
-       
-        <input type="checkbox"  id="notepad" value="notepad-try" name="tried_notepad">
-         <label for="notepad" class="side_label">Notepadd++</label>
-        </p>
-        <p class="field-textEd">
-       
-        <input type="checkbox"  id="atom" value="atom-try" name="tried_atom">
-         <label for="atom" class="side_label">Atom</label>
-        </p>
-        <p class="field-textEd">
-       
-        <input type="checkbox"  id="brackets" value="brackets-try" name="tried_brackets">
-         <label for="brackets" class="side_label">Brackets</label>
-        </p>
-        <p class="field-textEd">
-       
-        <input type="checkbox"  id="sublime" value="sublime-try" name="tried_sublime">
-         <label for="sublime" class="side_label">Sublime Text</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="vim" value="vim-try" name="tried_vim">
-        <label for="vim" class="side_label">Vim</label>
-        </p>
-        
-        <p class="field-textEd">
-        <input type="checkbox"  id="emacs" value="emacs-try" name="tried_emacs">
-        <label for="emacs" class="side_label">Emacs</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="komodo" value="komodo-try" name="tried_komodo">
-        <label for="komodo" class="side_label">Komodo Edit</label>
-        </p>
-        
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="webuilder" value="webuilder-try" name="tried_webuilder">
-        <label for="webuilder" class="side_label">Webuilder</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="icecoder" value="icecoder-try" name="tried_icecoder">
-        <label for="icecoder" class="side_label">Icecoder</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="coffeecup" value="coffeecup-try" name="tried_coffeecup">
-        <label for="coffeecup" class="side_label">CoffeeCup</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="bbedit" value="bbedit-try" name="tried_bbedit">
-        <label for="bbedit" class="side_label">BBEdit</label>
-        </p>
-        
-        <p class="field-textEd">
-        
-        <input type="checkbox"  id="bluefish" value="bluefish" name="tried_atom">
-        <label for="bluefish" class="side_label">Bluefish</label>
-        </p>
-    </div>  
-       <!-- CONTAINER FOR TEXT EDITORS ENDS-->
-       
-        
+
+          <div class="contact-field">
+            <label for="email" class="contact-info">Email Address</label>
+            <input type="email" id="email" placeholder="Required" name="user_email" required>
+          </div>
+
+
+
+          <div class="contact-field">
+            <label for="tel-no" class="contact-info">Phone Number</label>
+            <input type="tel" id="tel-no" placeholder="0207 888 9898" name="user_tel-no">
+          </div>
+
+
+
+          <div class="contact-field">
+            <label for="street" class="contact-info">Street Address</label>
+            <input type="text" id="street" placeholder="67 Gains Road" name="user_street">
+          </div>
+
+
+
+          <div class="contact-field">
+            <label for="city" class="contact-info">City</label>
+            <input type="text" id="city" placeholder="Croydon" name="user_city">
+          </div>
+
+
+
+          <div class="contact-field">
+            <label for="county" class="contact-info">County</label>
+            <select id="county" name="user_county">
+              <option selected hidden disabled>Choose your County</option>
+              <option value="middlesex">Middlesex</option>
+              <option value="kent">Kent</option>
+              <option value="surrey">Surrey</option>
+              <option value="essex">Essex</option>
+              <option value="hertfordshire">Hertfordshire</option>
+
+            </select>
+          </div>
+
+
+
+          <div class="contact-field" id="postcode">
+            <label for="postcode" class="contact-info">Postcode</label>
+            <input type="text" id="postcode" name="user_postcode" placeholder="CR4 3HH">
+          </div>
+
+        </div>
+        <!--FLEX CONTAINER END -->
+      </fieldset>
+
+      <!-- CONTACT INFO END -->
+
+      <!-- NEWSLETTER INFO -->
+
+      <fieldset id="news-letter">
+
+        <legend>Newsletter</legend>
+        <!--FLEX CONTAINER STARTS -->
+        <div class="flex-container">
+
+          <!-- FLEX FORM ITEMS START -->
+          <div class="flex-formItems">
+
+            <label class="center-label">Select the newsletters you would like to recieve.</label>
+            <hr class="newsLetter-divides">
+            <div class="field-news">
+              <input type="checkbox" id="html" value="news_html" name="newsletter_pref">
+              <label for="html" class="newsLetter_label">HTML News</label>
+            </div>
+            <div class="field-news">
+              <input type="checkbox" id="css" value="news_css" name="newsletter_pref">
+              <label for="css" class="newsLetter_label">CSS News</label>
+            </div>
+
+            <div class="field-news">
+              <input type="checkbox" id="javaScript" value="news_javascript" name="newsletter_pref">
+              <label for="javaScript" class="newsLetter_label">Javascript News</label>
+            </div>
+          </div>
+          <!-- FLEX FORM ITEMS ENDS -->
+
+          <!-- FLEX FORM ITEMS START -->
+          <div class="flex-formItems">
+
+            <label id="newsFormat-label">Newsletter format</label>
+            <hr class="newsLetter-divides">
+            <div class="field-news">
+              <input type="radio" id="html_format" value="html_format" name="news-format">
+              <label for="html_format" class="newsLetter_label">HTML</label>
+
+            </div>
+
+            <div class="field-news">
+              <input type="radio" id="plain-text_format" value="plain-text" name="news-format">
+              <label for="plain-text_format" class="newsLetter_label">Plain Text</label>
+            </div>
+
+          </div>
+          <!-- FLEX FORM ITEMS ENDS -->
+
+          <!-- FLEX FORM ITEMS START -->
+          <div class="flex-formItems">
+
+            <label id="textarea-labelOther" class="center-label" for="topics">Other topics you'd like to hear
+              about</label>
+            <div class="field-news">
+              <textarea id="topics" name="user_topics" placeholder="I would like to hear...."></textarea>
+            </div>
+
+          </div>
+          <!-- FLEX FORM ITEMS ENDS -->
+        </div>
+        <!--FLEX CONTAINER END -->
+      </fieldset>
+
+      <!-- NEWSLETTER INFO END -->
+
+
+      <!-- TEXT EDITORS INFO -->
+
+      <fieldset id="text-editors">
+        <legend>About Text Editors</legend>
+
+        <label class="textEditor-tried center-label">Which of these Text Editors have you tried?</label>
+
+        <!-- CONTAINER FOR TEXT EDITORS -->
+
+        <div id="container_checkboxes-editors">
+          <p class="field-textEd">
+
+            <input type="checkbox" id="vscode" value="notepad-try" name="tried_notepad">
+            <label for="vscode" class="side_label">VSCode</label>
+          </p>
+          <p class="field-textEd">
+
+            <input type="checkbox" id="atom" value="atom-try" name="tried_atom">
+            <label for="atom" class="side_label">Atom</label>
+          </p>
+          <p class="field-textEd">
+
+            <input type="checkbox" id="brackets" value="brackets-try" name="tried_brackets">
+            <label for="brackets" class="side_label">Brackets</label>
+          </p>
+          <p class="field-textEd">
+
+            <input type="checkbox" id="sublime" value="sublime-try" name="tried_sublime">
+            <label for="sublime" class="side_label">Sublime Text</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="vim" value="vim-try" name="tried_vim">
+            <label for="vim" class="side_label">Vim</label>
+          </p>
+
+          <p class="field-textEd">
+            <input type="checkbox" id="emacs" value="emacs-try" name="tried_emacs">
+            <label for="emacs" class="side_label">Emacs</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="komodo" value="komodo-try" name="tried_komodo">
+            <label for="komodo" class="side_label">Komodo Edit</label>
+          </p>
+
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="webuilder" value="webuilder-try" name="tried_webuilder">
+            <label for="webuilder" class="side_label">Webuilder</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="icecoder" value="icecoder-try" name="tried_icecoder">
+            <label for="icecoder" class="side_label">Icecoder</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="coffeecup" value="coffeecup-try" name="tried_coffeecup">
+            <label for="coffeecup" class="side_label">CoffeeCup</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="bbedit" value="bbedit-try" name="tried_bbedit">
+            <label for="bbedit" class="side_label">BBEdit</label>
+          </p>
+
+          <p class="field-textEd">
+
+            <input type="checkbox" id="bluefish" value="bluefish" name="tried_atom">
+            <label for="bluefish" class="side_label">Bluefish</label>
+          </p>
+        </div>
+        <!-- CONTAINER FOR TEXT EDITORS ENDS-->
+
+
         <div class="field">
-        <label class="textEditor-tried">Which Text Editor was your favourite?</label>
-        <select id="fav_textEditor" name="user_fav-textEditor">
-        <option selected hidden disabled>Your Favourite Text Editor</option>
-        	<option value="notepadd">Notepad++</option>
-        	<option value="atom">Atom</option>
-        	<option value="brackets">Brackets</option>
-        	<option value="sublime">Sublime Text</option>
-        	<option value="vim">Vim</option>
-        	<option value="emacs">Emacs</option>
-        	<option value="komodo">Komodo Edit</option>
-        	<option value="webuilder">Webuilder</option>
-        	<option value="icecoder">Icecoder</option>
-        	<option value="coffeecup">CoffeeCup</option>
-        	<option value="bbedit">BBEdit</option>
-        	<option value="bluefish">Bluefish</option>
-        </select>
-        
-        
-       </div> 
-       
-       
-       
-        
-        
-       
-        
-				 <div class="field">
-				 <label class="textEditor-tried">Tell us why that Text Editor is your favourite?</label>
-				<textarea id="textEditors" name="user_fav-textEditor">
+          <label class="textEditor-tried center-label">Which Text Editor was your favourite?</label>
+          <select id="fav_textEditor" name="user_fav-textEditor">
+            <option selected hidden disabled>Your Favourite Text Editor</option>
+            <option value="notepadd">Notepad++</option>
+            <option value="atom">Atom</option>
+            <option value="brackets">Brackets</option>
+            <option value="sublime">Sublime Text</option>
+            <option value="vim">Vim</option>
+            <option value="emacs">Emacs</option>
+            <option value="komodo">Komodo Edit</option>
+            <option value="webuilder">Webuilder</option>
+            <option value="icecoder">Icecoder</option>
+            <option value="coffeecup">CoffeeCup</option>
+            <option value="bbedit">BBEdit</option>
+            <option value="bluefish">Bluefish</option>
+          </select>
 
-				</textarea>
-				</div>
 
-        
-</fieldset>
-                <!-- TEXT EDITORS INFO END -->
-                
-                   <!-- SUBMIT BUTTON -->
-        <button type="submit">Sign Up </button> 
-                  <!-- SUBMIT BUTTON END -->
-        
-        
-     </form>
+        </div>
 
-                            <!-- FORM END --> 
-       
+
+
+
+
+
+
+        <div class="field">
+          <label for="textEditors" id="textEditor-trys" class="center-label">Tell us why that Text Editor is your
+            favourite?</label>
+          <textarea id="textEditors" name="user_fav-textEditor"
+            placeholder="This is my favourite text editor because....."></textarea>
+        </div>
+
+
+      </fieldset>
+      <!-- TEXT EDITORS INFO END -->
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit">Sign Up </button>
+      <!-- SUBMIT BUTTON END -->
+
+
+    </form>
+
+    <!-- FORM END -->
+
   </div>
-                            <!-- MAIN CONTAINER END --> 
-                            
-                            <!-- MAIN FOOTER -->
-  <footer class="main-footer box-inset-shadow ">     
-      <p>Copyright The Code Review</p>
-  </footer> 
-      
-                               <!-- MAIN FOOTER END -->
+  <!-- MAIN CONTAINER END -->
+
+  <!-- MAIN FOOTER -->
+  <footer class="main-footer box-inset-shadow ">
+    <p>Copyright The Code Review</p>
+  </footer>
+
+  <!-- MAIN FOOTER END -->
 </body>
+
 </html>
