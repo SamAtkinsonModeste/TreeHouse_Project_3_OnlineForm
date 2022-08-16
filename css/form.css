@@ -558,6 +558,11 @@ Base Containers Media 768px
 
 	}
 
+	#container_checkboxes-editors {
+		box-shadow: inset 0 0 6px#ffa17f;
+		width: 96%;
+		margin: 0 auto;
+	}
 
 
 	.main-footer {
@@ -605,6 +610,11 @@ Base Containers Media 768px
 
 	}
 
+	.field-news input[type="checkbox"],
+	.field-news input[type="radio"] {
+		margin-left: 50px;
+	}
+
 
 	#fav_textEditor {
 		/*select for fav text editor*/
@@ -620,7 +630,8 @@ Base Containers Media 768px
 	#fav_textEditor,
 	textarea,
 	.textarea-labels,
-	.textEditor-tired {
+	.textEditor-tired,
+	.field {
 		margin: 1.5em auto;
 		text-align: center;
 	}
@@ -637,12 +648,12 @@ Base Containers Media 768px
 
 	.field-textEd {
 		/*<p> containers for text-editors checkboxes*/
-		max-width: 310px;
+		width: 50%;
 
 	}
 
 	.field-textEd .side_label {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 
 	.contact-field {
@@ -676,12 +687,9 @@ Base Containers Media 768px
 		flex-wrap: wrap;
 	}
 
-
-
-
-
-
-
+	#container_checkboxes-editors {
+		justify-content: center;
+	}
 
 
 	.field-textEd input[type="checkbox"] {
@@ -689,7 +697,7 @@ Base Containers Media 768px
 	}
 
 	.field-textEd input[type="checkbox"]~label {
-		margin: 0 10px;
+		margin-left: 8px;
 
 	}
 
@@ -708,10 +716,14 @@ Base Containers Media 768px
 
 	.field-textEd {
 		/*<p> containers for text-editors checkboxes*/
-		max-width: 210px;
+		width: 31%;
+		/* border: solid red 1px; */
 
 	}
 
-
+	.field-textEd input[type="checkbox"] {
+		margin-left: 0;
+		margin-right: 10px;
+	}
 
 }
