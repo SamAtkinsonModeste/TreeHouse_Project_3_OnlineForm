@@ -32,7 +32,7 @@ Users should be able to :
   - Uses CSS transitions for focus states.
 
   ### Screenshot of my project 2 Mobile, Tablet & Deskop layouts
-![](project-3-screeshots-mobile-tablet.jpg)
+![](project-3-screenshots-mobile-tablet.jpg)
 
 
 ### Live Link
